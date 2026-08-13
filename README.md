@@ -24,3 +24,6 @@ To build a smart debugging assistant that not only finds errors but also helps d
 
 **Tech Stack:** React.js • HTML • CSS • Node.js • Express.js • Google Gemini API • Gemini Flash • REST API • Git • GitHub • Postman
 
+
+
+![image alt](https://github.com/aniketdwivedi123/Debugify/blob/6d46781dcef3e50c76f10f86f34756bc273e3fb1/Screenshot%202026-08-13%20140624.png)
