@@ -34,4 +34,4 @@ For **Debugify, the Code Editor section** can be the main workspace where users 
 
 # For the Debugify Code Editor, I make  these icons:
 
-![image alt]()
+![image alt](https://github.com/aniketdwivedi123/Debugify/blob/0dd1a0296c3f165c88e1c1683f0c4778e7e858f9/Screenshot%202026-08-13%20140705.png)
