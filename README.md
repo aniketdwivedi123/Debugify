@@ -30,3 +30,8 @@ For **Debugify, the Code Editor section** can be the main workspace where users 
 # Ui structure
 
 ![image alt](https://github.com/aniketdwivedi123/Debugify/blob/6d46781dcef3e50c76f10f86f34756bc273e3fb1/Screenshot%202026-08-13%20140624.png)
+
+
+# For the Debugify Code Editor, I make  these icons:
+
+![image alt]()
