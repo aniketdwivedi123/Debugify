@@ -40,4 +40,4 @@ For **Debugify, the Code Editor section** can be the main workspace where users 
 # Debugify — AI Response UI Structure
 For Debugify, the response UI should be structured so the user can quickly understand what is wrong → why → how to fix → apply fix.
 
-![image alt]()
+![image alt](https://github.com/aniketdwivedi123/Debugify/blob/e58d95e41526155db8cee065bcf2a3e259a0a4a5/Screenshot%202026-08-13%20140724.png)
