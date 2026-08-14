@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #fff;
+}
+
+.app-layout {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.page-response {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  z-index: 2;
+}
+
+.editor-wrapper {
+  flex: 1 1 55%;
+  height: 80vh;
+  min-width: 320px;
+  margin-top: 0.75rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.response-panel {
+  flex: 0 1 45%;
+  width: 100%;
+  max-width: 480px;
+  min-height: 280px;
+  height: 80vh;
+  margin-top: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: #111113;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+
+.response-body {
+  color: #f4f4f5;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+}
+
+.response-error {
+  color: #fda4af;
+  line-height: 1.6;
+}
+
+.editor-panel {
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background: #09090b;
+}
+
+.editor-surface {
+  flex: 1;
+  min-height: 0;
+}
+
+.language-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  background: #18181b;
+  border-bottom: 1px solid #3f3f46;
+  position: relative;
+}
+
+.language-label {
+  font-size: 0.95rem;
+  color: #f4f4f5;
+}
+
+.language-select {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #52525b;
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  outline: none;
+  min-width: 150px;
+  appearance: none;
+}
+
+.language-select option {
+  background-color: #000;
+  color: #fff;
+}
+
+.review-button {
+  min-width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #18181b;
+  color: #fff;
+  border: 1px solid #3f3f46;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.review-button:hover {
+  background-color: #27272a;
+}
+
+.review-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .editor-wrapper {
+    width: 100%;
+  }
+}
+
+/* ── Markdown Response Styles ── */
+.md-rendered {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #e4e4e7;
+}
+
+.md-rendered .md-p {
+  margin: 0 0 0.75rem 0;
+}
+
+.md-rendered .md-h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #a78bfa;
+  margin: 1rem 0 0.4rem;
+  border-bottom: 1px solid #27272a;
+  padding-bottom: 0.25rem;
+}
+
+.md-rendered .md-h2 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #818cf8;
+  margin: 0.85rem 0 0.3rem;
+}
+
+.md-rendered .md-h3 {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #60a5fa;
+  margin: 0.7rem 0 0.25rem;
+}
+
+.md-rendered strong {
+  color: #f4f4f5;
+  font-weight: 700;
+}
+
+.md-rendered em {
+  color: #a1a1aa;
+  font-style: italic;
+}
+
+.md-rendered .md-ul {
+  margin: 0.35rem 0 0.65rem 1.25rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.md-rendered .md-li {
+  margin-bottom: 0.2rem;
+  color: #d4d4d8;
+}
+
+.md-rendered .md-code-block {
+  background: #0d0d0f;
+  border: 1px solid #3f3f46;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin: 0.65rem 0;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #86efac;
+  font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  white-space: pre;
+}
+
+.md-rendered .md-inline-code {
+  background: #1c1c1e;
+  border: 1px solid #3f3f46;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.83em;
+  color: #f97316;
+  font-family: 'Fira Code', 'Consolas', monospace;
+}
+
+.md-rendered .md-hr {
+  border: none;
+  border-top: 1px solid #3f3f46;
+  margin: 0.75rem 0;
+}
